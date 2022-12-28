@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH PHOTORY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&family=Noto+Serif+KR&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="nav">
+            <div class="title">
+                <H2 style="font-family: 'Noto Sans KR', sans-serif;"><img src="img/logo.png" alt="" width="48px"
+                        height="53px">DH PHOTORY</H2>
+            </div>
+
+            <ul>
+                <li id="introduce">소개</li>
+                <li id="spring">봄:음식</li>
+                <li id="summer">여름:패션</li>
+                <li id="fall">가을:합성</li>
+                <li id="winter">겨울:제품</li>
+                <li id="newspring">새로운 봄: 영상</li>
+                <li id="Con" style="margin-right: 0px;">Contact</li>
+            </ul>
+
+        </div>
+
+
+
+
+        <div id="contents"></div>
+
+
+
+        <div class="end">
+            <div class="endin">
+                <div class="enddoc">
+                    <p>이 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                    <p>© 2022 Lee dongho. All Rights Reserved.</p>
+                </div>
+
+                <div class="endicon">
+                    <div class="endicon_inner">
+                        <div><img src="img/end_blog.png" alt=""></div>
+                        <div><img src="img/end_instagram.png" alt=""></div>
+                    </div>
+                    <div style="clear: both ;"></div>
+
+
+                </div>
+            </div>
+        </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+
+<script>
+    function 반복슬라이드() {
+        for (let i = 0; i < 4; i++) {
+            (x => {
+                setTimeout(() => {
+                    console.log(x)
+                    function 구동() {
+                        document.getElementById('slide').style.transform = "translateX(" + x * -1400 + "px)"
+                    }
+                    구동();
+                }, 4000 * x);
+
+            })(i);
+        }
+    }
+    반복슬라이드();
+
+</script>
+
+<script>
+
+    // 1페이지
+    var OnePage = `
+    <div class="frame">
+            <div id="slide" class="slide">
+                <div><img src="img/background01.png" alt=""></div>
+                <div><img src="img/background02.png" alt=""></div>
+                <div><img src="img/background03.png" alt=""></div>
+                <div><img src="img/background04.png" alt=""></div>
+            </div>
+        </div>
+    <div class="timeline">
+            <H2 style="font-family: 'Noto Sans KR', sans-serif;">TIME LINE</H2>
+            <ul class="time">
+                <li>2022</li>
+                <li>2021</li>
+                <li>2020</li>
+                <li style="margin-right: 0px;">2019</li>
+            </ul>
+
+            <ul class="day">
+                <Li style="margin-left: 442px;">2021.4</Li>
+                <Li style="margin-left: 162px;">2020.10</Li>
+                <Li style="margin-left: 370px;">2019.10</Li>
+                <Li style="margin-left: 107px;">2019.6</Li>
+            </ul>
+
+            <ul class="expri">
+                <li style="margin-left: 60px;">
+                    <div></div>
+                    <div style="margin-left: 300px;"></div>
+                </li>
+                <li style="margin-left: 43px;">
+                    <div style="background-color: #2873E3;"></div>
+
+                    <div style="background-color: #2873E3; margin-left: 120px;"></div>
+                </li>
+                <li style="margin-left: 40px;">
+                    <div style="background-color: #E3C528; "></div>
+
+                    <div style="background-color: #E3C528; margin-left: 345px; "></div>
+                </li>
+                <li style="margin-left: 23px; ">
+                    <div style="background-color: #E38228;"></div>
+
+                    <div style="background-color: #E38228; margin-left: 90px;"></div>
+                </li>
+            </ul>
+
+            <ul class="expri2">
+                <li>팀에스티 사진/영상 촬영, 편집자</li>
+                <li style="margin-left: 185px;">쿠팡이츠 메뉴 촬영<p style="margin: -15px;"></p><br>2021.2 동서대학교<br>
+                    영상/애니메이션 학과 졸업 </li>
+                <li style="margin-left: 90px;">졸업 작품 프로젝트 단편 영화 제작 팀장</li>
+                <li style="margin-left: 200px;">경남 농업 기술원 홍보촬영 보조</li>
+            </ul>
+        </div>
+
+        <div style="clear: both ;"></div>
+        <div class="skill">
+            <H2 style="font-family: 'Noto Sans KR', sans-serif;">SKILL</H2>
+        </div>
+
+        <div class="Tool">
+            <div>
+                <h2>Tool</h2>
+            </div>
+
+            <div class="root1"></div>
+
+            <div class="rootout">
+                <div class="root2">
+                    <div class="root2-in"></div>
+                </div>
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="listbox"
+                            style="background-color: #FFF73E ; margin-top: 0px; padding: 4px 9px 8px 9px;">
+                            POTO</div>
+                    </li>
+                    <li>
+                        <div class="listbox"
+                            style="background-color: #3EC5FF ; margin-top: 123px; padding: 4px 9px 8px 9px;">
+                            DESIGN
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listbox"
+                            style="background-color: #F68838 ; margin-top: 156px; padding: 4px 9px 8px 9px;">
+                            VIDEO</div>
+                    </li>
+                    <li>
+                        <div class="listbox"
+                            style="background-color: #78D7D1 ; margin-top: 136px; padding: 4px 9px 8px 9px;">
+                            WEB</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="icon">
+                <ul>
+                    <li style="margin-bottom: 86px;">
+                        <img src="icon/logos_adobe-photoshop.png" alt="">
+                        <img src="icon/logos_adobe-lightroom.png" alt="">
+                    </li>
+                    <li style="margin-bottom: 117px; transform: translateX(-18px);">
+                        <img src="icon/logos_adobe-illustrator.png" alt="">
+                        <img style="transform: translateY(-7px);" src="icon/logos_figma.png" alt="">
+                    </li>
+                    <li style="margin-bottom: 85px;">
+                        <img src="icon/logos_adobe-premiere.png" alt="">
+                        <img src="icon/logos_adobe-after-effects.png" alt="">
+                    </li>
+                    <li style="margin-bottom: 95px; margin-right: 23px ; transform: translateX(-30px);">
+                        <img src="icon/logos_html-5.png" alt="">
+                        <img src="icon/logos_css-3.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="clear: both ;"></div>
+    </div>`
+
+
+    // 2페이지
+    var TwoPage = `
+    <div class="food">
+            <ul>
+              <li >
+                <img src="food/food01.png" alt="" style="margin-right: 12px;"> <img src="food/food02.png" alt="">
+              </li>
+              <li >
+                <img src="food/food03.png" alt="" style="margin-right: 12px;"> <img src="food/food04.png" alt="">
+              </li>
+              <li >
+                <img src="food/food05.png" alt="" style="margin-right: 12px;"> <img src="food/food06.png" alt="">
+              </li>
+              <li >
+                <img src="food/food07.png" alt="" style="margin-right: 12px;"> <img src="food/food08.png" alt="">
+              </li>
+              <li >
+                <img src="food/food09.png" alt="" style="margin-right: 12px;"> <img src="food/food10.png" alt="">
+              </li>
+            </ul>
+        </div>
+        <div style="clear: both ;"></div>
+    </div>`
+
+    // 3페이지
+    var ThreePage = `
+   <div class="pasion">
+
+             <div class="box1">
+              <div><img src="pasion/pasion01.png" alt=""></div>
+              <div><img src="pasion/pasion02.png" alt=""></div>
+              <div><img src="pasion/pasion03.png" alt=""></div>
+             </div>
+
+             <div class="box2">
+              <div><img src="pasion/pasion04.png" alt=""></div>
+              <div><img src="pasion/pasion05.png" alt="" ></div>
+             </div>
+
+             <div class="box3" style="float: left;">
+              <div><img src="pasion/pasion06.png" alt="" style="margin-bottom:21px ; "> </div>
+              <div><img src="pasion/pasion08.png" alt="" ></div>
+             </div>
+
+             <div class="box4" style="float: left;">
+              <div><img src="pasion/pasion07.png" alt="" style="margin-bottom:26px; "></div>
+              <div><img src="pasion/pasion09.png" alt=""></div>
+             </div>
+
+             <div style="clear: both ;"></div>
+             
+             <div class="box5">
+              <div><img src="pasion/pasion11.png" alt="" ></div>
+              <div><img src="pasion/pasion10.png" alt="" ></div>
+             </div>
+
+        </div>
+
+        <div style="clear: both ;"></div>`
+
+    // 4페이지
+    var FourPage = `
+    <div class="comp">
+
+             
+    <div><img src="Comp/Comp01.png" alt=""></div>
+    <div><img src="Comp/Comp02.png" alt=""></div>
+    <div><img src="Comp/Comp03.png" alt=""></div>
+   
+
+
+     </div>
+
+      <div style="clear: both ;"></div>`
+
+    // 5페이지
+    var FivePage = `
+      <div class="product">
+
+             
+     <div><img src="product/ST.png" alt=""></div>
+
+   
+
+
+     </div>
+
+    `
+
+    // 6페이지
+    var SixPage = `
+ <div class="video">
+
+             
+<div>
+  <iframe width="896" height="504" src="https://www.youtube.com/embed/VVgEs8B8pvs" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div>
+  <iframe width="896" height="504" src="https://www.youtube.com/embed/7867z_ldqt4" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div>
+  <iframe width="896" height="504" src="https://www.youtube.com/embed/lJqO9txrOmU" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<div style="clear: both; margin-bottom: 120px;"></div>
+   
+</div >`
+
+// 7페이지
+var ConTact = `
+<div class="proflie">
+
+             
+<div><img src="contact/profile.png" alt=""></div>
+
+<div class="email">
+  <p>연락처:010-2012-0103</p>
+  <p>이메일:dlehd963@naver.com</p>
+</div>
+
+   
+<div style="clear: both ;"></div>
+
+</div>`
+
+
+
+
+    $('#contents').html(OnePage);
+
+    $('#introduce').on("click", function () {
+        $('#contents').html(OnePage);
+    });
+
+    $('#spring').on("click", function () {
+        $('#contents').html(TwoPage);
+    });
+
+    $('#summer').on("click", function () {
+        $('#contents').html(ThreePage);
+    });
+
+    $('#fall').on("click", function () {
+        $('#contents').html(FourPage);
+    });
+
+    $('#winter').on("click", function () {
+        $('#contents').html(FivePage);
+    });
+
+    $('#newspring').on("click", function () {
+        $('#contents').html(SixPage);
+    });
+
+    $('#Con').on("click", function () {
+        $('#contents').html(ConTact);
+    });
+
+
+
+
+
+</script>
+
+</html>
